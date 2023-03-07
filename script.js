@@ -1,8 +1,4 @@
-
-
-
-executar()
-
+// 0 - Adicionar evento em botão para executar contexto da função
 async function executar(){
     // 1 - Pegar id do input
     // 2 - Buscar personagem da api
