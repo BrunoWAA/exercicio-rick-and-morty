@@ -19,7 +19,9 @@ async function executar(){
 }
 
 
-
+/* Função para fazer uma request GET para a API utilizando o JS 
+   Veremos logo em seguida! Foquem na leitura do Objeto na função acima.
+*/
 async function buscarPersonagemDaAPI(id){
     const url = `https://rickandmortyapi.com/api/character/${id}`
 
