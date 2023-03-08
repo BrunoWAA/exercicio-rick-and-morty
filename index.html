@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Document</title>
 </head>
@@ -12,25 +13,26 @@
 <body>
     <header>
         Rick and Morty
+        <br>
+
     </header>
 
     <main>
 
+
         <div class="containerBusca">
             <input id="idPersonagem" type="text">
+            <br>
             <button onclick="executar()">Buscar Pesonagem</button>
         </div>
 
 
         <div class="containerPersonagem" id="resultado">
             <div>
-                MOSTRAR DADOS DO PERSONAGEM AQUI
+                <img src="" alt="" id="imagemDoPersonagem">
             </div>
             <div>
-                IMAGEM
-            </div>
-            <div>
-                NOME
+                <h1 id="nomeDoPersonagem"></h1>
             </div>
         </div>
     </main>

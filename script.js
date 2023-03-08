@@ -2,10 +2,25 @@
 async function executar(){
     // 1 - Pegar id do input
     // 2 - Buscar personagem da api
-    const id = 1 // ! Substituir pelo valor do INPUT !
-    const personagem = await buscarPersonagemDaAPI(id)
-    console.log(personagem)
+    const input = document.getElementById("idPersonagem").value
+    if (input > 0 )
+    {
+        const id = input
+        const personagem = await buscarPersonagemDaAPI(id)
+        document.getElementById("nomeDoPersonagem").innerHTML = (personagem.name)
+        document.getElementById("imagemDoPersonagem").src = (personagem.image); 
+        console.log(personagem.image)
+    }
+    else
+    {
+        document.getElementById("nomeDoPersonagem").innerHTML = "Não encontrado"
+        document.getElementById("imagemDoPersonagem").src = ""
 
+    }
+
+
+
+    
     /* MONTAR ABAIXO HTML COM O VALOR RETORNADO DA API */
     // 3 - Pegar elemento de resultado do HTML
     // 4 - Atribuir valores do personagem na tela
